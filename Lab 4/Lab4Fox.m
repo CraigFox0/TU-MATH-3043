@@ -149,9 +149,9 @@ fprintf('Part 3\n');
 
 N = 11;
 
-x = linspace(-5, 5, N);
-x = x';
-data = -5*cos((((2.*x)-1)/(2.*N))*pi);
+y = 1:N;
+x = -5*cos((((2.*y)-1)/(2.*N))*pi);
+data =  1./(1+x.^2);
 Zeros = zeros(size(data, 1), size(data, 1)-1);
 % Combines initial data with room for future Q values
 Q = [data Zeros];
@@ -167,9 +167,9 @@ fprintf('N = %d, Approximation: %.8f\n', N, answer);
 
 N = 21;
 
-x = linspace(-5, 5, N);
-x = x';
-data = -5*cos((((2.*x)-1)/(2.*N))*pi);
+y = 1:N;
+x = -5*cos((((2.*y)-1)/(2.*N))*pi);
+data =  1./(1+x.^2);
 Zeros = zeros(size(data, 1), size(data, 1)-1);
 % Combines initial data with room for future Q values
 Q = [data Zeros];
@@ -185,9 +185,9 @@ fprintf('N = %d, Approximation: %.8f\n', N, answer);
 
 N = 41;
 
-x = linspace(-5, 5, N);
-x = x';
-data = -5*cos((((2.*x)-1)/(2.*N))*pi);
+y = 1:N;
+x = -5*cos((((2.*y)-1)/(2.*N))*pi);
+data =  1./(1+x.^2);
 Zeros = zeros(size(data, 1), size(data, 1)-1);
 % Combines initial data with room for future Q values
 Q = [data Zeros];
@@ -203,9 +203,9 @@ fprintf('N = %d, Approximation: %.8f\n', N, answer);
 
 N = 81;
 
-x = linspace(-5, 5, N);
-x = x';
-data = -5*cos((((2.*x)-1)/(2.*N))*pi);
+y = 1:N;
+x = -5*cos((((2.*y)-1)/(2.*N))*pi);
+data =  1./(1+x.^2);
 Zeros = zeros(size(data, 1), size(data, 1)-1);
 % Combines initial data with room for future Q values
 Q = [data Zeros];
@@ -221,9 +221,9 @@ fprintf('N = %d, Approximation: %.8f\n', N, answer);
 
 N = 121;
 
-x = linspace(-5, 5, N);
-x = x';
-data = -5*cos((((2.*x)-1)/(2.*N))*pi);
+y = 1:N;
+x = -5*cos((((2.*y)-1)/(2.*N))*pi);
+data =  1./(1+x.^2);
 Zeros = zeros(size(data, 1), size(data, 1)-1);
 % Combines initial data with room for future Q values
 Q = [data Zeros];
