@@ -125,7 +125,8 @@ b = (a(2:end)-a(1:end-1))./h(1:end) - (c(2:end)+2.*c(1:end-1)).*(h(1:end)./3);
 
 d = (c(2:end)-c(1:end-1))./(3.*h(1:end));
 
-answerMatrix = [a(1:end-1), b, c(1:end-1), d];
+fprintf("Matrix of cubic coefficients\n");
+answerMatrix = [a(1:end-1), b, c(1:end-1), d]
 % z is the value to estimate, y is which piecewise equation to use
 S = @(z, y) a(y) + (b(y) * (z-x(y))) + (c(y) * (z-x(y))^2) + (d(y) * (z-x(y))^3);
 
@@ -153,7 +154,7 @@ fprintf("Predicted End Speed: %.4f miles per second\n", 1/endspeed);
 %% Part 4
 % Form a clamped cubic spline of e^x
 
-fprintf("Part 1: Form a clamped cubic spline of e^x\n");
+fprintf("Part 4: Form a clamped cubic spline of e^x\n");
 
 % Input points here
 x = [0; 1; 2; 3];
