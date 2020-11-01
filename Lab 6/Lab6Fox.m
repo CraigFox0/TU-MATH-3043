@@ -46,6 +46,6 @@ h = (b-a)/n;
 r = [.308, .325, .342, .359, .376, .393, .410, .427, .444, .461, .478];
 T = [640, 794, 885, 943, 1034, 1064, 1114, 1152, 1204, 1222, 1239];
 
-A = h*(T(1)*r(1)*theta + T(11)*r(11)*theta + 2 * sum(T(2:n-1).*r(2:n-1)*theta))/2;
-B = h*(r(1)*theta + r(11)*theta + 2 * sum(r(2:n-1)*theta))/2;
+A = h*(T(1)*r(1)*theta + T(11)*r(11)*theta + 2 * sum(T(2:n).*r(2:n)*theta))/2;
+B = h*(r(1)*theta + r(11)*theta + 2 * sum(r(2:n)*theta))/2;
 fprintf("T Approximation: %.4f\n", A/B);
