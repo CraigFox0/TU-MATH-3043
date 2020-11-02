@@ -22,7 +22,11 @@ A = [ h/2*K(x(1:end),x(1)), h*K(x(1:end),x(2:end-1)'), h/2*K(x(1:end),x(end)) ];
 
 A = A - eye(size(A,1));
 
-u = A\-f(x)
+u = A\-f(x);
+
+for i = 1:size(u,1)
+    fprintf('u(x%.f) = %f\n',i ,u(i));
+end
 
 %% Section B
 
@@ -49,7 +53,11 @@ for i = 2:size(A,1)-1
 end
 A = A - eye(size(A,1));
 
-u = A\-f(x)
+u = A\-f(x);
+
+for i = 1:size(u,1)
+    fprintf('u(x%.f) = %f\n',i ,u(i));
+end
 
 %% Section C
 
@@ -69,4 +77,8 @@ A = [ h/2*K(x(1:end),x(1)), h*K(x(1:end),x(2:end-1)'), h/2*K(x(1:end),x(end)) ];
 
 A = A - eye(size(A,1));
 
-u = A\-f(x)
+u = A\-f(x);
+
+for i = 1:size(u,1)
+    fprintf('u(x%.f) = %f\n',i ,u(i));
+end
